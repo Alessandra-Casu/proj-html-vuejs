@@ -17,12 +17,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "./../assets/styles/partials/variables" as *;
 .card {
   max-width: 25%;
   text-align: center;
-  background-color: gray;
-  color: black;
-  border: 2px solid salmon;
+
+  border: 2px solid $colorIconFooter;
+  h2 {
+    color: $color-fontSmall;
+  }
+  h5 {
+    border-top: 1px dotted $color-fontSmall;
+    color: $color-fontLarge;
+    font-size: small;
+  }
 }
 
 img {
