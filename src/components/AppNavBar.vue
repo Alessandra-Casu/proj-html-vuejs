@@ -9,28 +9,36 @@ export default {};
         <a href="#"><font-awesome-icon icon="fa-solid fa-house" /></a>
       </li>
       <li>
-        <a href="#"><font-awesome-icon icon="fa-brands fa-pagelines" /></a>
-        <h5>TREATMENTS</h5>
-        <h6>Face & Body</h6>
+        <a href="#"
+          ><font-awesome-icon icon="fa-brands fa-pagelines" />
+          <h5>TREATMENTS</h5>
+          <h6>Face & Body</h6>
+        </a>
       </li>
       <li>
-        <a href="#"><font-awesome-icon icon="fa-solid fa-person-dress" /></a>
-        <h5>ABOUT</h5>
-        <h6>Our Team</h6>
+        <a href="#"
+          ><font-awesome-icon icon="fa-solid fa-person-dress" />
+          <h5>ABOUT</h5>
+          <h6>Our Team</h6>
+        </a>
       </li>
 
       <li>
         <img src="../assets/img/avada-spa-logo-retina-new-200x23.png" alt="" />
       </li>
       <li>
-        <a href="#"><font-awesome-icon icon="fa-solid fa-heart" /></a>
-        <h5>JOURNAL</h5>
-        <h6>Tips & Tricks</h6>
+        <a href="#">
+          <font-awesome-icon icon="fa-solid fa-heart" />
+          <h5>JOURNAL</h5>
+          <h6>Tips & Tricks</h6>
+        </a>
       </li>
       <li>
-        <a href="#"><font-awesome-icon icon="fa-solid fa-bookmark" /></a>
-        <h5>BOOK NOW</h5>
-        <h6>Special Offers</h6>
+        <a href="#"
+          ><font-awesome-icon icon="fa-solid fa-bookmark" />
+          <h5>BOOK NOW</h5>
+          <h6>Special Offers</h6>
+        </a>
       </li>
       <li>
         <a class="icon" href="#"
@@ -86,10 +94,10 @@ ul {
     }
   }
   a {
-    text-align: none;
+    text-decoration: none;
+    text-align: center;
     color: $color-fontSmall;
   }
-
   a:hover {
     cursor: pointer;
     color: $colorHover;
