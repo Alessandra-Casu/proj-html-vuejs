@@ -12,6 +12,7 @@ export default {
   <div class="card">
     <img :src="urlImg" :alt="titolo" />
     <h2>{{ titolo }}</h2>
+    <h5>{{ info }}</h5>
   </div>
 </template>
 
