@@ -72,7 +72,7 @@ footer {
     color: $color-fontLarge;
 
     a {
-      color: $color-fontLarge;
+      color: $colorIconFooter;
     }
 
     .center {

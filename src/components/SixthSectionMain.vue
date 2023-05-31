@@ -3,86 +3,67 @@ export default {};
 </script>
 
 <template>
-  <div class="box">
-    <ul>
-      <li class="left-text">
-        <div class="first-row">25%</div>
-        <div class="second-row">SPECIAL OFFER</div>
-      </li>
-      <li class="center-text">
-        <div class="center-first-row">
-          Take some time. Treat yourself. You reserve it.
-        </div>
-        <div class="second-row">
-          Take some time. Treat yourself. You reserve it. Book a treatment this
-          month and receive a 25% on all further treatments.
-        </div>
-      </li>
-      <li>
-        <button class="btn"><a href="#">BOOK NOW</a></button>
-      </li>
-    </ul>
+  <div class="content-box">
+    <div class="A"></div>
+    <div class="B">
+      <div class="text-box">
+        <h6>
+          "If you want to relax, watch the clounds pass by if you're laying on
+          the grass, or sit in front of the creek; just doing nothing and having
+          those still moments is what really rejuvenates the body..."
+        </h6>
+        <h5>FRIDA FRIEDSON, MASSEUSE</h5>
+      </div>
+    </div>
+    <div class="C"></div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 @use "./../assets/styles/partials/variables" as *;
 
-.box {
-  margin-top: 10rem;
+.content-box {
+  height: 400px;
   width: 100%;
-  height: 220px;
-  background-image: url("../assets/img/ptb_cta-new.jpg");
+}
+.A {
+  height: 100px;
+
+  background-image: url("../assets/img/\Home-quota-new.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: initial;
+}
+.B {
+  height: 200px;
+  background-image: url("../assets/img/\Home-quota-new.png");
   background-position: left;
-  color: $color-whiteA;
-  color: $color-whiteA;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: left;
   display: flex;
+  justify-items: center;
   align-items: center;
   justify-content: center;
 }
-ul {
-  list-style: none;
-
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  align-items: center;
-  width: 60%;
-  height: 100%;
+.text-box {
+  width: 50%;
+  text-align: center;
+  color: $color-whiteA;
   font-size: small;
 }
-
-.left-text {
-  text-align: center;
-  border: 1px solid $color-whiteA;
-  padding: 1rem;
-}
-.first-row {
-  font-size: 30px;
-}
-.second-row {
-  font-size: 7px;
+h5,
+h6 {
+  line-height: 2rem;
 }
 
-.center-text {
-  width: 60%;
-}
-.center-first-row {
-  font-size: 20px;
-}
-
-.btn {
-  background-color: $color-fontSmall;
-  border: 1px solid $color-fontSmall;
-  border-radius: 30px;
-  padding: 0.5rem;
-  a {
-    color: $color-whiteA;
-    text-decoration: none;
-  }
-}
-.btn:hover {
-  cursor: pointer;
-  background-color: $colorHover;
-  border: none;
+.C {
+  height: 100px;
+  background-image: url("../assets/img/\Home-quota-new.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: right;
 }
 </style>
