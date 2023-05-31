@@ -9,12 +9,18 @@ export default {
     return {
       arrTreatments: [
         {
-          src: "../src/assets/img/Layer-1-new-400x440.jpg",
+          image: "Layer-1-new-400x440.png",
           titolo: "Hydroterapy",
           info: "Vesti",
         },
       ],
     };
+  },
+  methods: {
+    getImagePath(img) {
+      return new URL(`../components/src/assets/img/${img}`, import.meta.url)
+        .href;
+    },
   },
 };
 </script>
@@ -28,7 +34,7 @@ export default {
     <CardTreatments
       v-for="i in arrTreatments"
       :key="i.titolo"
-      :urlImg:="i.src"
+      :urlImg:="getImagePath(i.image)"
       :titolo="i.titolo"
       :info="i.info"
     ></CardTreatments>

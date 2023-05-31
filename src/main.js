@@ -23,6 +23,11 @@ import { faPagelines } from "@fortawesome/free-brands-svg-icons";
 import { faPersonDress } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
+
 /* add icons to the library */
 library.add(
   faUserSecret,
@@ -38,6 +43,10 @@ library.add(
   faHouse,
   faPagelines,
   faPersonDress,
-  faBookmark
+  faBookmark,
+  faSquareFacebook,
+  faSquareTwitter,
+  faSquareInstagram,
+  faSquareYoutube
 );
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

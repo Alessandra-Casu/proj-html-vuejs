@@ -3,6 +3,7 @@ import FirstSectionMain from "./FirstSectionMain.vue";
 import SecondSectionMain from "./SecondSectionMain.vue";
 import ThirdSectionMain from "./ThirdSectionMain.vue";
 import FourthSectionMain from "./FourthSectionMain.vue";
+import SixthSectionMain from "./SixthSectionMain.vue";
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     SecondSectionMain,
     ThirdSectionMain,
     FourthSectionMain,
+    SixthSectionMain,
   },
 };
 </script>
@@ -20,6 +22,7 @@ export default {
     <SecondSectionMain></SecondSectionMain>
     <ThirdSectionMain></ThirdSectionMain>
     <FourthSectionMain></FourthSectionMain>
+    <SixthSectionMain></SixthSectionMain>
   </main>
 </template>
 
