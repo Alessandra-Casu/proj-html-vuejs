@@ -54,6 +54,7 @@ ul {
 .left-text {
   text-align: center;
   padding: 1rem;
+  border: 1px solid $color-whiteA;
 }
 .first-row {
   font-size: 30px;

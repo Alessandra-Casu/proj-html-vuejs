@@ -30,6 +30,8 @@ export default {
     <h2>OUR TREATMENTS</h2>
   </div>
 
+  <div class="box-card"></div>
+
   <div>
     <CardTreatments
       v-for="i in arrTreatments"
