@@ -11,7 +11,42 @@ export default {
         {
           image: "Layer-1-new-400x440.png",
           titolo: "Hydroterapy",
-          info: "Vesti",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
+        },
+        {
+          image: "Layer-1-new-400x440.png",
+          titolo: "Massage",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
+        },
+        {
+          image: "Layer-1-new-400x440.png",
+          titolo: "Aromatherapy",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
+        },
+        {
+          image: "Layer-1-new-400x440.png",
+          titolo: "Heat Therapy",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
+        },
+        {
+          image: "Layer-1-new-400x440.png",
+          titolo: "Skin Care",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
+        },
+        {
+          image: "Layer-1-new-400x440.png",
+          titolo: "Spa Days",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
+        },
+        {
+          image: "Layer-1-new-400x440.png",
+          titolo: "Beauty Treatments",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
+        },
+        {
+          image: "Layer-1-new-400x440.png",
+          titolo: "Residential",
+          info: "Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinisa elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.",
         },
       ],
     };
@@ -29,13 +64,11 @@ export default {
     <h2>OUR TREATMENTS</h2>
   </div>
 
-  <div class="box-card"></div>
-
-  <div>
+  <div class="box-card">
     <CardTreatments
       v-for="i in arrTreatments"
       :key="i.titolo"
-      :urlImg:="getImagePath(i.image)"
+      :urlImg="getImagePath(i.image)"
       :titolo="i.titolo"
       :info="i.info"
     ></CardTreatments>
@@ -55,5 +88,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.box-card {
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
