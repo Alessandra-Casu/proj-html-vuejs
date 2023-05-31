@@ -1,51 +1,30 @@
 <script>
 export default {
   props: {
-    thumbImg: {
-      type: String,
-      required: false,
-      default: "Indirizzo immagine di default",
-    },
-    Type: {
-      type: String,
-      required: false,
-      default: "Indirizzo immagine di default",
-    },
-    Info: {
-      type: String,
-      required: false,
-      default: "Indirizzo immagine di default",
-    },
+    urlImg: String,
+    titolo: String,
+    info: String,
   },
 };
 </script>
 
 <template>
   <div class="card">
-    <img :src="thumbImg" :alt="type" />
-    <h5>{{ type }}</h5>
+    <img :src="urlImg" :alt="titolo" />
+    <h2>{{ titolo }}</h2>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@use "./../assets/styles/partials/variables" as *;
-
 .card {
-  width: 25%;
-  height: 50%;
+  max-width: 25%;
   text-align: center;
-  background-color: pink;
-  display: flex;
-  h5 {
-    color: $color-fontSmall;
-  }
-  h6 {
-    color: $color-fontLarge;
-  }
+  background-color: gray;
+  color: black;
+  border: 2px solid salmon;
 }
 
 img {
   width: 100%;
-  height: 120px;
 }
 </style>

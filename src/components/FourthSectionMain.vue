@@ -9,8 +9,8 @@ export default {
     return {
       arrTreatments: [
         {
-          thumb: "..\src\assets\img\Layer-1-new-400x440.jpg",
-          type: "Hydroterapy",
+          src: "../src/assets/img/Layer-1-new-400x440.jpg",
+          titolo: "Hydroterapy",
           info: "Vesti",
         },
       ],
@@ -26,11 +26,11 @@ export default {
 
   <div>
     <CardTreatments
-      v-for="treatment in arrTreatments"
-      :key="treatment.thumb"
-      :thumbImg="treatment.thumb"
-      :type="treatment.type"
-      :info="treatment.info"
+      v-for="i in arrTreatments"
+      :key="i.titolo"
+      :urlImg:="i.src"
+      :titolo="i.titolo"
+      :info="i.info"
     ></CardTreatments>
   </div>
 </template>
